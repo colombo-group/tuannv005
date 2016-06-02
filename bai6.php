@@ -1,15 +1,4 @@
-<html>
-<body>
-    <h1> Bài 6: Máy tính điện tử </h1>
-    <form action = "" method = "post">
-    	<input type="text" name="value1" placeholder="Giá trị 1" />
-    	<input type="submit" value="+" name="add" />
-    	<input type="submit" value="-" name="sub" />
-    	<input type="submit" value="x" name="multi" />
-    	<input type="submit" value="/" name="divi" />
-    	<input type="submit" value="^" name="pow" />
-    	<input type="text" name="value2" placeholder="Giá trị 2" />
-     
+    
         <?php
             $value1 = $value2 = $result = 0;
             $comment = "";
@@ -30,7 +19,7 @@
                     $result = $value1 - $value2;
                 }
                 
-                if(isset($_POST['mul'])) {
+                if(isset($_POST['multi'])) {
                     $result = $value1 * $value2;
                 }
                 
@@ -47,9 +36,17 @@
                 $comment="Ban da nhap sai! Vui long nhap lai!";
             }
         ?>
-        = <input type="text" value = "<?php echo $result;?>"  />
-        <p><?php echo $comment; ?></p>
-    </form>        
-</body>
-</html>
+        
+<h1> Bài 6: Máy tính điện tử </h1>
+<form action = "" method = "post">
+    <input type="text" name="value1" placeholder="Giá trị 1" value="<?php echo $value1; ?>" />
+    <input type="submit" value="+" name="add" />
+    <input type="submit" value="-" name="sub" />
+    <input type="submit" value="x" name="multi" />
+    <input type="submit" value="/" name="divi" />
+    <input type="submit" value="^" name="pow" />
+    <input type="text" name="value2" placeholder="Giá trị 2" value="<?php echo $value2; ?>" />
+    = <input type="text" value = "<?php echo $result;?>"  />
+    <p><?php echo $comment; ?></p>
+</form>        
 
