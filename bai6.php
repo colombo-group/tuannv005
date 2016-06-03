@@ -24,15 +24,12 @@
                 }
                 
                 if(isset($_POST['divi'])) {
-                    /*if($value2 != 0) {
+                    if($result != 0) {
                         $result = $value1 / $value2;
                     }else {
                         $result = "err";
-                        $comment = "Vui long nhap value2!=0";
-                    }*/
-                    echo $value2;
-                    
-                    
+                        $comment = "Vui long nhap value2!=0";    
+                    }
                 }
                 
                 if(isset($_POST['pow'])) {
@@ -55,6 +52,6 @@
     <input type="submit" value="^" name="pow" />
     <input type="text" name="value2" placeholder="Giá trị 2" value="<?php echo $value2; ?>" />
     = <input type="text" value = "<?php echo $result;?>"  />
-    <p><?php echo $comment; ?></p>
+    <p style="color: red"><?php echo $comment; ?></p>
 </form>        
 
