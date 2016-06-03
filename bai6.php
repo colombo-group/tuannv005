@@ -25,7 +25,7 @@
                 
                 if(isset($_POST['divi'])) {
                     if($value2 == 0) {
-                        $comment="Khong ton tai phep chia cho 0. Vui long nhap lai Value2!=0"
+                        $comment="Khong ton tai phep chia cho 0. Vui long nhap lai Value2!=0";
                     }else {
                         $result = $value1 / $value2;
                     }
