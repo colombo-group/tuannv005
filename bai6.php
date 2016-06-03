@@ -24,7 +24,7 @@
                 }
                 
                 if(isset($_POST['divi'])) {
-                    if($value2 != 0) {
+                    if($value2 =! 0) {
                         $result = $value1 / $value2;
                     }else {
                         $result = "err";
